@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.curriculo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.left,
+.right {
+    width: 45%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.left {
+    background-color: #A6A6A6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.foto-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 210px;
+    width: 210px;
+}
+
+.foto {
+    width: 100%;
+}
+
+.container_info {
+    margin: 30px;
+    text-align: left;
+    width: 80%;
+
+}
+
+p {
+    font-size: 11px;
+    font-family: inter;
+    line-height: 1.72;
+}
+
+h1 {
+    font-size: 31.7px;
+    font-family: "Roxborough CF Thin";
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h2,
+h3 {
+    font-size: 16.6px;
+    font-family: "Roxborough CF Thin";
+    text-transform: uppercase;
+    font-weight: normal;
+}

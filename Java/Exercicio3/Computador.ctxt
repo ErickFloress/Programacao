@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Computador
+comment1.params=marca\ velocidade\ anoFabricacao\ novo
+comment1.target=Computador(java.lang.String,\ double,\ int,\ boolean)
+comment2.params=marca
+comment2.target=void\ setMarca(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getMarca()
+comment4.params=velocidade
+comment4.target=void\ setVelocidade(double)
+comment5.params=
+comment5.target=double\ getVelocidade()
+comment6.params=anoFabricacao
+comment6.target=void\ setAnoFabricacao(int)
+comment7.params=
+comment7.target=int\ getAnoFabricacao()
+comment8.params=novo
+comment8.target=void\ setNovo(boolean)
+comment9.params=
+comment9.target=boolean\ getNovo()
+numComments=10
