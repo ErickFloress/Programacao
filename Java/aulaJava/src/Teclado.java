@@ -1,10 +1,10 @@
-public class Livro
+public class Teclado
 {
     private String titulo, autor;
      private int anoPublicacao, quantidadePaginas;
      private double preco;
     
-    public Livro(String titulo, String autor, int anoPublicacao, double preco, int quantidadePaginas) {
+    public Teclado(String titulo, String autor, int anoPublicacao, double preco, int quantidadePaginas) {
         this.titulo = titulo;
         this.autor = autor;
         this.anoPublicacao = anoPublicacao;
