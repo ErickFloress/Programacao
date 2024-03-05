@@ -1,4 +1,27 @@
 Aula do Pablo Git - 
 
-1 - git remote
-    
+1 - Remote
+    comando: git remote -v
+        origin link (fetch)
+        origin link (push)
+    comando: git remote add name link
+        origin link (fetch)
+        origin link (push)
+        name link (fetch)
+        name link (push)s
+
+2 - Merge
+    Comando: git merge dev
+
+    Dentro do tempo:
+    T3(DEV)
+    T2(HEAD/Master) -> T1  (fast-forward)
+    Ficando: T3(HEAD/Master) -> T2 -> T1 
+
+    Fora do tempo:
+    T5(Dev) ->
+    T6(HEAD/Master) -> T4  (No-Fast-forward)
+    Ficando: 
+    M(HEAD/Master)(Commit de merge) -> T6 -> T5 -> T4
+
+3 - Rebase
