@@ -1,16 +1,30 @@
 Aula do Pablo Git - 
 
-1 - Remote
+1 - Remotos
+
+    - Para colaborar com qualquer projeto Git, é necessário saber como gerencias seus repositórios Remotos
+    - repositórios remotos são versões de seu repositório hospedado na Internet
+    - Você pode ter vários (repositórios)
+
     comando: git remote -v
         origin link (fetch)
         origin link (push)
+
     comando: git remote add name link
         origin link (fetch)
         origin link (push)
         name link (fetch)
-        name link (push)s
+        name link (push)
+
+        Origin <--> Local
+        Name   <--> Local
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 2 - Merge
+
+    - Com o comando merge você junta dois ou mais branches
+
     Comando: git merge dev
 
     Dentro do tempo:
@@ -19,9 +33,48 @@ Aula do Pablo Git -
     Ficando: T3(HEAD/Master) -> T2 -> T1 
 
     Fora do tempo:
-    T5(Dev) ->
+    T5(Dev)         -> T4
     T6(HEAD/Master) -> T4  (No-Fast-forward)
     Ficando: 
     M(HEAD/Master)(Commit de merge) -> T6 -> T5 -> T4
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 3 - Rebase
+
+    Com o comando rebase, você pode pegar todas as alterações que foram confirmadas em um branch e reproduzi-las em outro
+
+    Comando: git rebase Master
+    C(HEAD/DEV) -> A
+    B(Master)   -> A
+
+    C(HEAD/DEV) -> B(Master) -> A
+
+3.1 - Rebase iterativo
+
+    - Com o comando rebase na forma iterativa, você pode alterar os commits presentes em um branch
+
+    Comando: git rebase -i HEAD~2
+
+    p, pick <commit> = use commit
+    r, reword <commit> = use commit, but edit the commit message
+    e, edit <commit> = use commit, but stop amending
+    s, squash <commit> = use commit, but meld into previous commit
+    f, fixup <commit> = like "squash", but discard this commit's log message
+    x, exec <command> = run command (The rest of the line) using shell
+    b, break  = stop here (continue rebase later with 'git rebase --continue')
+    d, drop <commit> = remove commit
+    l, label <label> = label current HEAD with a name
+    t, reset <label> = reset HEAD to a label
+    m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+
+    Comando: git rebase -i HEAD~2
+    
+    1 pick <hash> c
+    2 pick <hash> D
+    3 drop <hash> c
+    4 pick <hash> D
+
+    D(HEAD) -> C -> B -> A
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
